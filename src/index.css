@@ -5,13 +5,14 @@
 @layer base {
   body {
     @apply antialiased;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Outfit', sans-serif;
     background: linear-gradient(to bottom, #000000, #0a0506, #000000);
   }
 
   h1, h2, h3 {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 300;
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    letter-spacing: 0.02em;
   }
 }
 
