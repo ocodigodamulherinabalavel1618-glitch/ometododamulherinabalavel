@@ -150,7 +150,7 @@ function App() {
               Mas algo sempre parece segurar você de volta.
             </p>
             <p className="text-lg md:text-xl lg:text-2xl text-amber-500/90 leading-relaxed font-normal mt-8">
-              E se eu te dissesse que isso não é culpa sua — mas sim dos padrões mentais
+              E se eu te dissesse que isso não é culpa sua, mas sim dos padrões mentais
               que você nunca aprendeu a reprogramar?
             </p>
           </div>
