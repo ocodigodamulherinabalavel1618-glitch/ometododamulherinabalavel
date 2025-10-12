@@ -271,8 +271,8 @@ function App() {
 
           <div className="space-y-6 text-base md:text-lg lg:text-xl text-white leading-relaxed">
             <p>
-              Seu cérebro não é fixo. Ele se molda, se adapta, se reconstrói —
-              esse fenômeno se chama <span className="text-amber-500/80 font-normal">neuroplasticidade</span>.
+              Seu cérebro não é fixo. Ele se molda, se adapta, se reconstrói.
+              Esse fenômeno se chama <span className="text-amber-500/80 font-normal">neuroplasticidade</span>.
             </p>
             <p>
               Cada pensamento que você repete cria uma trilha neural.
