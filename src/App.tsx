@@ -110,17 +110,17 @@ function App() {
           <div className="pt-8 space-y-4">
             <button
               onClick={handleCTA}
-              className="group relative px-8 md:px-10 py-4 md:py-5 text-black font-semibold text-base md:text-lg rounded-full hover:shadow-2xl transition-all duration-300 hover:scale-105"
+              className="group relative px-8 md:px-10 py-4 md:py-5 text-black font-semibold text-base md:text-lg rounded-full hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-pulse-glow"
               style={{ background: 'linear-gradient(135deg, #d4af37 0%, #f4e5c3 50%, #d4af37 100%)' }}
             >
-              <Crown className="inline-block w-5 h-5 mr-2 -mt-1" />
+              <Crown className="inline-block w-5 h-5 mr-2 -mt-1 animate-float" />
               Quero sentir o poder que sempre foi meu
             </button>
 
             {/* Price Badge - Now Clickable */}
             <button
               onClick={handleCTA}
-              className="inline-block px-6 py-3 border border-rose-400/20 rounded-full hover:border-rose-400/40 transition-all duration-300 hover:scale-105 cursor-pointer"
+              className="inline-block px-6 py-3 border border-rose-400/20 rounded-full hover:border-rose-400/40 transition-all duration-300 hover:scale-105 cursor-pointer shimmer"
               style={{ background: 'rgba(236, 72, 153, 0.05)' }}
             >
               <p className="text-sm">
@@ -153,6 +153,42 @@ function App() {
               E se eu te dissesse que isso não é culpa sua — mas sim dos padrões mentais
               que você nunca aprendeu a reprogramar?
             </p>
+          </div>
+
+          {/* Timeline de Resultados */}
+          <div className="mt-16 space-y-6">
+            <div className="flex items-start gap-4 p-6 rounded-2xl border border-amber-600/10" style={{ background: 'linear-gradient(135deg, rgba(212,175,55,0.03), rgba(236,72,153,0.02))' }}>
+              <div className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center text-black font-semibold" style={{ background: 'linear-gradient(135deg, #d4af37, #f4e5c3)' }}>
+                7
+              </div>
+              <div className="flex-1">
+                <p className="text-base md:text-lg text-gray-300 leading-relaxed">
+                  <span className="text-amber-400/80 font-medium">Em 7 dias</span>, você notará o fim da auto crítica constante.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4 p-6 rounded-2xl border border-amber-600/10" style={{ background: 'linear-gradient(135deg, rgba(212,175,55,0.03), rgba(236,72,153,0.02))' }}>
+              <div className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center text-black font-semibold" style={{ background: 'linear-gradient(135deg, #d4af37, #f4e5c3)' }}>
+                14
+              </div>
+              <div className="flex-1">
+                <p className="text-base md:text-lg text-gray-300 leading-relaxed">
+                  <span className="text-amber-400/80 font-medium">Em 14 dias</span>, vai se sentir mais segura nas decisões.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4 p-6 rounded-2xl border border-amber-600/10" style={{ background: 'linear-gradient(135deg, rgba(212,175,55,0.03), rgba(236,72,153,0.02))' }}>
+              <div className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center text-black font-semibold" style={{ background: 'linear-gradient(135deg, #d4af37, #f4e5c3)' }}>
+                21
+              </div>
+              <div className="flex-1">
+                <p className="text-base md:text-lg text-gray-300 leading-relaxed">
+                  <span className="text-amber-400/80 font-medium">Em 21 dias</span>, você estará irreconhecível.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -213,10 +249,10 @@ function App() {
           <div className="text-center pt-8">
             <button
               onClick={handleCTA}
-              className="group relative px-8 md:px-10 py-4 md:py-5 text-black font-semibold text-base md:text-lg rounded-full hover:shadow-2xl transition-all duration-300 hover:scale-105"
+              className="group relative px-8 md:px-10 py-4 md:py-5 text-black font-semibold text-base md:text-lg rounded-full hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-pulse-glow"
               style={{ background: 'linear-gradient(135deg, #d4af37 0%, #f4e5c3 50%, #d4af37 100%)' }}
             >
-              <Crown className="inline-block w-5 h-5 mr-2 -mt-1" />
+              <Crown className="inline-block w-5 h-5 mr-2 -mt-1 animate-float" />
               Quero sentir o poder que sempre foi meu
             </button>
           </div>
@@ -374,10 +410,10 @@ function App() {
 
           <button
             onClick={handleCTA}
-            className="group relative px-8 md:px-10 py-4 md:py-5 text-black font-semibold text-base md:text-lg rounded-full hover:shadow-2xl transition-all duration-300 hover:scale-105"
+            className="group relative px-8 md:px-10 py-4 md:py-5 text-black font-semibold text-base md:text-lg rounded-full hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-pulse-glow"
             style={{ background: 'linear-gradient(135deg, #d4af37 0%, #f4e5c3 50%, #d4af37 100%)' }}
           >
-            <Crown className="inline-block w-5 h-5 mr-2 -mt-1" />
+            <Crown className="inline-block w-5 h-5 mr-2 -mt-1 animate-float" />
             Quero sentir o poder que sempre foi meu
           </button>
         </div>
@@ -410,7 +446,7 @@ function App() {
               <p className="text-sm md:text-base text-gray-400">Acesso imediato</p>
             </div>
             <a
-              href="https://wa.me/SEU_NUMERO?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20O%20Código%20da%20Mulher%20Inabalável"
+              href="https://wa.me/5561993711943?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20O%20Código%20da%20Mulher%20Inabalável"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-amber-600/20 hover:border-amber-600/40 transition-all duration-300 hover:scale-105"
