@@ -405,7 +405,7 @@ function App() {
           </div>
 
           <p className="text-xl md:text-2xl lg:text-3xl text-amber-500/90 font-normal leading-relaxed">
-            Acesso imediato. Resultados que você sente — e o espelho confirma.
+            Acesso imediato. Resultados que você sente e as pessoas ao seu redor desacreditam.
           </p>
 
           <button
