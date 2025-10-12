@@ -30,8 +30,8 @@ function App() {
   });
 
   useEffect(() => {
-    // Define o tempo final (24 horas a partir de agora)
-    const endTime = new Date().getTime() + (24 * 60 * 60 * 1000);
+    // Define o tempo final (1 hora a partir de agora)
+    const endTime = new Date().getTime() + (1 * 60 * 60 * 1000);
 
     const timer = setInterval(() => {
       const now = new Date().getTime();
@@ -83,7 +83,7 @@ function App() {
           </h1>
 
           {/* Subheadline */}
-          <p className="text-base md:text-lg lg:text-xl text-gray-400 max-w-4xl mx-auto font-light leading-relaxed">
+          <p className="text-base md:text-lg lg:text-xl text-white max-w-4xl mx-auto font-light leading-relaxed">
             Esqueça os métodos vazios e as frases de autoajuda. Aqui, você vai sentir a diferença quando a ciência começa a trabalhar a seu favor.
           </p>
 
@@ -137,15 +137,15 @@ function App() {
       <section className="relative py-24 px-4" style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0), rgba(13,6,7,0.3), rgba(0,0,0,0))' }}>
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="text-center space-y-6">
-            <p className="text-lg md:text-xl lg:text-2xl text-gray-400 leading-relaxed">
+            <p className="text-lg md:text-xl lg:text-2xl text-white leading-relaxed">
               Você não está sozinha nessa sensação.
             </p>
-            <p className="text-base md:text-lg lg:text-xl text-gray-400 leading-relaxed">
+            <p className="text-base md:text-lg lg:text-xl text-white leading-relaxed">
               Aquele peso de olhar no espelho e não reconhecer mais quem você era.
               A voz interna que sussurra que você não é boa o suficiente.
               As dúvidas que surgem antes de qualquer decisão importante.
             </p>
-            <p className="text-base md:text-lg lg:text-xl text-gray-400 leading-relaxed">
+            <p className="text-base md:text-lg lg:text-xl text-white leading-relaxed">
               Você sabe que tem potencial. Sabe que poderia brilhar.
               Mas algo sempre parece segurar você de volta.
             </p>
@@ -162,7 +162,7 @@ function App() {
                 7
               </div>
               <div className="flex-1">
-                <p className="text-base md:text-lg text-gray-300 leading-relaxed">
+                <p className="text-base md:text-lg text-white leading-relaxed">
                   <span className="text-amber-400/80 font-medium">Em 7 dias</span>, você notará o fim da auto crítica constante.
                 </p>
               </div>
@@ -173,7 +173,7 @@ function App() {
                 14
               </div>
               <div className="flex-1">
-                <p className="text-base md:text-lg text-gray-300 leading-relaxed">
+                <p className="text-base md:text-lg text-white leading-relaxed">
                   <span className="text-amber-400/80 font-medium">Em 14 dias</span>, vai se sentir mais segura nas decisões.
                 </p>
               </div>
@@ -184,7 +184,7 @@ function App() {
                 21
               </div>
               <div className="flex-1">
-                <p className="text-base md:text-lg text-gray-300 leading-relaxed">
+                <p className="text-base md:text-lg text-white leading-relaxed">
                   <span className="text-amber-400/80 font-medium">Em 21 dias</span>, você estará irreconhecível.
                 </p>
               </div>
@@ -205,7 +205,7 @@ function App() {
             </p>
           </div>
 
-          <p className="text-base md:text-lg lg:text-xl text-gray-400 text-center max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base md:text-lg lg:text-xl text-white text-center max-w-3xl mx-auto leading-relaxed">
             Um método neurocientífico que usa práticas simples e consistentes
             para transformar crenças limitantes em alicerces de poder interior.
           </p>
@@ -241,7 +241,7 @@ function App() {
               >
                 <benefit.icon className="w-10 h-10 text-amber-500/70 mb-4" />
                 <h3 className="text-xl md:text-2xl font-serif text-amber-400/80 mb-3">{benefit.title}</h3>
-                <p className="text-sm md:text-base text-gray-400 leading-relaxed">{benefit.description}</p>
+                <p className="text-sm md:text-base text-white leading-relaxed">{benefit.description}</p>
               </div>
             ))}
           </div>
@@ -269,7 +269,7 @@ function App() {
             </h2>
           </div>
 
-          <div className="space-y-6 text-base md:text-lg lg:text-xl text-gray-400 leading-relaxed">
+          <div className="space-y-6 text-base md:text-lg lg:text-xl text-white leading-relaxed">
             <p>
               Seu cérebro não é fixo. Ele se molda, se adapta, se reconstrói —
               esse fenômeno se chama <span className="text-amber-500/80 font-normal">neuroplasticidade</span>.
@@ -317,7 +317,7 @@ function App() {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl md:text-2xl font-serif text-amber-400/80 mb-2">{stage.stage}</h3>
-                  <p className="text-sm md:text-base lg:text-lg text-gray-400 leading-relaxed">{stage.description}</p>
+                  <p className="text-sm md:text-base lg:text-lg text-white leading-relaxed">{stage.description}</p>
                 </div>
               </div>
             ))}
@@ -355,7 +355,7 @@ function App() {
                 className="relative p-6 md:p-8 rounded-2xl border border-amber-600/10 space-y-4"
                 style={{ background: 'linear-gradient(135deg, rgba(212,175,55,0.05), rgba(236,72,153,0.03))' }}
               >
-                <p className="text-sm md:text-base text-gray-400 leading-relaxed italic">"{testimonial.text}"</p>
+                <p className="text-sm md:text-base text-white leading-relaxed italic">"{testimonial.text}"</p>
                 <div className="pt-4 border-t border-amber-600/10">
                   <p className="text-sm md:text-base text-amber-400/80 font-normal">{testimonial.author}, {testimonial.age}</p>
                 </div>
@@ -446,7 +446,7 @@ function App() {
               <p className="text-sm md:text-base text-gray-400">Acesso imediato</p>
             </div>
             <a
-              href="https://wa.me/5561993711943?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20O%20Código%20da%20Mulher%20Inabalável"
+              href="https://wa.me/5561993711943?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20O%20Método%20da%20Mulher%20Inabalável"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-amber-600/20 hover:border-amber-600/40 transition-all duration-300 hover:scale-105"
