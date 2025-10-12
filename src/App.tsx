@@ -84,7 +84,7 @@ function App() {
 
           {/* Subheadline */}
           <p className="text-base md:text-lg lg:text-xl text-gray-400 max-w-4xl mx-auto font-light leading-relaxed">
-            Imagine acordar com a mente leve, a voz da dúvida em silêncio e uma confiança tão natural que transparece no seu olhar, antes mesmo de você dizer uma palavra. 
+            Esqueça os métodos vazios e as frases de autoajuda. Aqui, você vai sentir a diferença quando a ciência começa a trabalhar a seu favor.
           </p>
 
           {/* VSL Section */}
