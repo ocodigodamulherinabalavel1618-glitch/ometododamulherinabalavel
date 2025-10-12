@@ -163,7 +163,7 @@ function App() {
         <div className="max-w-5xl mx-auto space-y-12">
           <div className="text-center space-y-4">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-gradient-gold">
-              O Código da Mulher Inabalável
+              O Método da Mulher Inabalável
             </h2>
             <p className="text-lg md:text-xl lg:text-2xl text-rose-400/60 font-light">
               O Segredo da Confiança Feminina
