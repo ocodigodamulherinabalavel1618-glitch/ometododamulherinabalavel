@@ -84,7 +84,7 @@ function App() {
 
           {/* Subheadline */}
           <p className="text-base md:text-lg lg:text-xl text-white max-w-4xl mx-auto font-light leading-relaxed">
-            Esqueça os métodos vazios e as frases de autoajuda. Aqui, você vai sentir a diferença quando a ciência começa a trabalhar a seu favor.
+            Esqueça os métodos vazios e as frases de autoa juda. Aqui, você vai sentir a diferença quando a ciência começa a trabalhar a seu favor.
           </p>
 
           {/* VSL Section */}
