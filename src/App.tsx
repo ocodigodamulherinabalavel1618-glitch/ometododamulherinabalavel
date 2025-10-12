@@ -84,8 +84,7 @@ function App() {
 
           {/* Subheadline */}
           <p className="text-base md:text-lg lg:text-xl text-gray-400 max-w-4xl mx-auto font-light leading-relaxed">
-            Dentro deste método exclusivo, você vai descobrir o processo neurocientífico que desperta autoconfiança,
-            silencia a autocrítica e ativa a sua força natural.
+            Existe um processo neurocientífico capaz de despertar uma confiança tão profunda que nada, nem seus próprios pensamentos, consegue te sabotar. Dentro deste método, você vai descobrir como ativar esse poder em você.
           </p>
 
           {/* VSL Section */}
