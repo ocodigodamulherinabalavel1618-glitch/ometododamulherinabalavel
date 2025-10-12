@@ -78,7 +78,7 @@ function App() {
            Descubra o método neurocientífico que centenas de mulheres estão usando para reprogramar o cérebro,{' '}
             <span className="text-gradient-gold">silenciar a autocrítica e despertar uma autoconfiança</span>
             <span className="block mt-4 text-2xl md:text-4xl lg:text-5xl text-gray-200">
-            em até 21 dias!
+            EM NO MÁXIMO 21 DIAS!
             </span>
           </h1>
 
