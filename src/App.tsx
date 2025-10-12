@@ -428,7 +428,7 @@ function App() {
       <footer className="relative py-12 px-4 border-t border-amber-600/10">
         <div className="max-w-4xl mx-auto text-center space-y-6">
           <h3 className="text-xl md:text-2xl font-serif text-amber-400/80">
-            O Código da Mulher Inabalável
+            O Método da Mulher Inabalável
           </h3>
           <p className="text-sm text-gray-500">
             © 2025 – Todos os direitos reservados
