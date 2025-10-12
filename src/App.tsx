@@ -206,7 +206,7 @@ function App() {
           </div>
 
           <p className="text-base md:text-lg lg:text-xl text-white text-center max-w-3xl mx-auto leading-relaxed">
-            Um método neurocientífico que usa práticas simples e consistentes
+            Uma fórmula neurocientífica que usa práticas simples e consistentes
             para transformar crenças limitantes em alicerces de poder interior.
           </p>
 
