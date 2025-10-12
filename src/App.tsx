@@ -75,7 +75,7 @@ function App() {
         <div className="relative max-w-5xl mx-auto text-center space-y-8">
           {/* Headline */}
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif leading-tight text-gray-100">
-           Descubra o método neurocientífico que milhares de mulheres estão usando para reprogramar o cérebro,{' '}
+           Descubra o método que milhares de mulheres estão usando para reprogramar o cérebro,{' '}
             <span className="text-gradient-gold">silenciar a autocrítica e despertar sua autoconfiança!</span>
             <span className="block mt-4 text-2xl md:text-4xl lg:text-5xl text-gray-200">
            
