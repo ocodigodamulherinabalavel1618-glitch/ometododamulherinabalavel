@@ -1,5 +1,8 @@
 import { Sparkles, Heart, Brain, Shield, Crown, CheckCircle2, Lock } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import image1 from '../.bolt/1.png';
+import image2 from '../.bolt/2.png';
+import image3 from '../.bolt/3.png';
 
 const removeFloating = () => {
   document
@@ -127,7 +130,7 @@ function App() {
                 De <span className="line-through text-gray-500">R$52,90</span> por{' '}
                 <span className="text-2xl font-bold text-gradient-rose">R$19,90</span>
               </p>
-              <p className="text-xs text-gray-400 mt-1">oferta de lançamento por tempo limitado</p>
+              <p className="text-xs text-gray-400 mt-1">oferta exclusiva por tempo limitado</p>
             </button>
           </div>
         </div>
@@ -332,35 +335,10 @@ function App() {
             Elas sentiram a transformação
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-6 md:gap-8">
-            {[
-              {
-                text: 'Eu me via no espelho e não reconhecia mais quem eu era. Depois que comecei o método, voltei a gostar da mulher que me olha de volta. É surreal.',
-                author: 'Larissa',
-                age: '34 anos'
-              },
-              {
-                text: 'Eu sempre fui a que duvidava de tudo, principalmente de mim. Hoje, eu entro em qualquer lugar e as pessoas sentem a minha energia. E o melhor: eu também sinto.',
-                author: 'Jéssica',
-                age: '42 anos'
-              },
-              {
-                text: 'Eu não comprei achando que ia mudar minha vida. Eu comprei por curiosidade. Mas mudei. Hoje eu acordo com outra cabeça — e outro brilho no olhar.',
-                author: 'Tainá',
-                age: '31 anos'
-              }
-            ].map((testimonial, idx) => (
-              <div
-                key={idx}
-                className="relative p-6 md:p-8 rounded-2xl border border-amber-600/10 space-y-4"
-                style={{ background: 'linear-gradient(135deg, rgba(212,175,55,0.05), rgba(236,72,153,0.03))' }}
-              >
-                <p className="text-sm md:text-base text-white leading-relaxed italic">"{testimonial.text}"</p>
-                <div className="pt-4 border-t border-amber-600/10">
-                  <p className="text-sm md:text-base text-amber-400/80 font-normal">{testimonial.author}, {testimonial.age}</p>
-                </div>
-              </div>
-            ))}
+          <div className="flex flex-col md:flex-row gap-6 md:gap-8">
+            <img src={image1} alt="Testimonial 1" className="rounded-2xl border border-amber-600/10" />
+            <img src={image2} alt="Testimonial 2" className="rounded-2xl border border-amber-600/10" />
+            <img src={image3} alt="Testimonial 3" className="rounded-2xl border border-amber-600/10" />
           </div>
         </div>
       </section>
@@ -369,7 +347,7 @@ function App() {
       <section className="relative py-24 px-4" style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0), rgba(212,175,55,0.03), rgba(0,0,0,0))' }}>
         <div className="max-w-3xl mx-auto text-center space-y-8">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-gradient-gold">
-            Oferta Exclusiva de Lançamento
+            Oferta Exclusiva
           </h2>
 
           {/* Countdown Timer */}
