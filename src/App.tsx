@@ -366,35 +366,33 @@ function App() {
             Oferta Exclusiva
           </h2>
 
-          {/* Countdown Timer */}
-          <div className="inline-flex items-center gap-4 px-6 py-3 rounded-full border border-amber-600/20" style={{ background: 'rgba(212,175,55,0.05)' }}>
-            <p className="text-sm text-gray-400">Termina em:</p>
-            <div className="flex gap-2">
-              <div className="flex flex-col items-center">
-                <span className="text-2xl md:text-3xl font-bold text-amber-400/90">{String(timeLeft.hours).padStart(2, '0')}</span>
-                <span className="text-xs text-gray-500">horas</span>
-              </div>
-              <span className="text-2xl md:text-3xl text-amber-400/90">:</span>
-              <div className="flex flex-col items-center">
-                <span className="text-2xl md:text-3xl font-bold text-amber-400/90">{String(timeLeft.minutes).padStart(2, '0')}</span>
-                <span className="text-xs text-gray-500">min</span>
-              </div>
-              <span className="text-2xl md:text-3xl text-amber-400/90">:</span>
-              <div className="flex flex-col items-center">
-                <span className="text-2xl md:text-3xl font-bold text-amber-400/90">{String(timeLeft.seconds).padStart(2, '0')}</span>
-                <span className="text-xs text-gray-500">seg</span>
+          <div className="w-full max-w-md mx-auto bg-black/20 backdrop-blur-lg rounded-2xl border border-amber-500/20 p-8 space-y-6 shadow-lg shadow-amber-500/10">
+            <div className="text-center">
+              <p className="text-lg text-amber-400/80">Oferta exclusiva termina em:</p>
+              <div className="flex justify-center items-center gap-4 mt-2">
+                <div className="flex flex-col items-center">
+                  <span className="text-4xl font-bold text-white">{String(timeLeft.hours).padStart(2, '0')}</span>
+                  <span className="text-xs text-gray-400">HORAS</span>
+                </div>
+                <span className="text-4xl font-bold text-white">:</span>
+                <div className="flex flex-col items-center">
+                  <span className="text-4xl font-bold text-white">{String(timeLeft.minutes).padStart(2, '0')}</span>
+                  <span className="text-xs text-gray-400">MINUTOS</span>
+                </div>
+                <span className="text-4xl font-bold text-white">:</span>
+                <div className="flex flex-col items-center">
+                  <span className="text-4xl font-bold text-white">{String(timeLeft.seconds).padStart(2, '0')}</span>
+                  <span className="text-xs text-gray-400">SEGUNDOS</span>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div className="inline-block p-6 md:p-8 rounded-3xl border border-amber-600/15" style={{ background: 'linear-gradient(135deg, rgba(212,175,55,0.05), rgba(236,72,153,0.03))' }}>
-            <p className="text-base md:text-lg text-gray-400 mb-2">De</p>
-            <p className="text-2xl md:text-3xl line-through text-gray-600 mb-4">R$ 52,90</p>
-            <p className="text-base md:text-lg text-gray-400 mb-2">por apenas</p>
-            <p className="text-5xl md:text-6xl lg:text-7xl font-bold text-gradient-rose mb-6">R$ 19,90</p>
-            <div className="flex items-center justify-center gap-2 text-amber-500/80">
-              <CheckCircle2 className="w-5 h-5" />
-              <p className="text-sm">Acesso imediato</p>
+            <div className="text-center space-y-2">
+              <p className="text-lg text-gray-400 line-through">De R$ 52,90</p>
+              <p className="text-5xl font-bold text-gradient-rose animate-pulse-text">por R$ 19,90</p>
+              <div className="flex items-center justify-center gap-2 text-amber-500/80 pt-4">
+                <CheckCircle2 className="w-5 h-5" />
+                <p className="text-sm">Acesso imediato e vitalício</p>
+              </div>
             </div>
           </div>
 
