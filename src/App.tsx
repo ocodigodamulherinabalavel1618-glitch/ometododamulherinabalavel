@@ -1,4 +1,5 @@
 import { Sparkles, Heart, Brain, Shield, Crown, CheckCircle2, Lock } from 'lucide-react';
+import WhatsAppIcon from './WhatsappIcon';
 import { useState, useEffect } from 'react';
 import image1 from '../.bolt/1.png';
 import image2 from '../.bolt/2.png';
@@ -229,12 +230,12 @@ function App() {
               {
                 icon: Shield,
                 title: 'Torne-se inabalável',
-                description: 'Desenvolva uma autoconfiança que não depende de validação externa — ela vem de dentro.'
+                description: 'Desenvolva uma autoconfiança que não depende de validação externa, pois ela vem de dentro.'
               },
               {
                 icon: Sparkles,
                 title: 'Desperte seu brilho',
-                description: 'Sinta a transformação que as pessoas veem em você — e que você sente ao acordar.'
+                description: 'Sinta a transformação que as pessoas veem em você, e que você sente ao acordar.'
               }
             ].map((benefit, idx) => (
               <div
@@ -430,7 +431,7 @@ function App() {
               className="flex items-center gap-2 px-5 py-2.5 rounded-full border border-amber-600/20 hover:border-amber-600/40 transition-all duration-300 hover:scale-105"
               style={{ background: 'linear-gradient(135deg, rgba(212,175,55,0.05), rgba(236,72,153,0.03))' }}
             >
-              <Heart className="w-5 h-5 text-amber-500/70" />
+                            <WhatsAppIcon className="w-5 h-5 text-amber-500/70" />
               <p className="text-sm md:text-base text-gray-400">Suporte via WhatsApp</p>
             </a>
           </div>
