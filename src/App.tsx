@@ -37,7 +37,43 @@ function App() {
   const [parallaxOffset, setParallaxOffset] = useState(0);
 
   useEffect(() => {
-    const handleScroll = () => {
+    const handleContextMenu = (e: MouseEvent) => {
+      e.preventDefault();
+    };
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (
+        e.key === 'F12' ||
+        (e.ctrlKey && e.shiftKey && e.key === 'I') ||
+        (e.ctrlKey && e.shiftKey && e.key === 'J') ||
+        (e.ctrlKey && e.key === 'U')
+      ) {
+        e.preventDefault();
+      }
+    };
+
+    const detectDevTools = () => {
+      const threshold = 160;
+      const widthThreshold = window.outerWidth - window.innerWidth > threshold;
+      const heightThreshold = window.outerHeight - window.innerHeight > threshold;
+
+      if (widthThreshold || heightThreshold) {
+        document.body.innerHTML = '';
+      }
+    };
+
+    window.addEventListener('contextmenu', handleContextMenu);
+    window.addEventListener('keydown', handleKeyDown);
+    const interval = setInterval(detectDevTools, 1000);
+
+    return () => {
+      window.removeEventListener('contextmenu', handleContextMenu);
+      window.removeEventListener('keydown', handleKeyDown);
+      clearInterval(interval);
+    };
+  }, []);
+
+  useEffect(() => {
       setParallaxOffset(window.pageYOffset);
     };
 
