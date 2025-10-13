@@ -302,7 +302,7 @@ function App() {
               essas trilhas</span>. Pode criar novos caminhos. Pode ensinar seu cérebro a acreditar em você novamente.
             </p>
             <p className="text-xl md:text-2xl text-amber-500/90 text-center font-normal pt-6">
-              E é exatamente isso que O Método da Mulher Inabalável faz.
+              E é exatamente isso que <span className="block">O Método da Mulher Inabalável faz.</span>
             </p>
           </div>
         </div>
