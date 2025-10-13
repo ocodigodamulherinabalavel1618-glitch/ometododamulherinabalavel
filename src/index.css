@@ -107,6 +107,6 @@
   }
 
   .text-responsive {
-    font-size: clamp(2rem, 15vw, 5rem);
+    font-size: clamp(1.5rem, 8vw, 3rem);
   }
 }

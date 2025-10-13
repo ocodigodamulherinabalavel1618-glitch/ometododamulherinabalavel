@@ -74,7 +74,7 @@ function App() {
   return (
     <div className="min-h-screen text-white overflow-hidden" style={{ background: 'linear-gradient(to bottom, #000000 0%, #0d0607 20%, #0a0506 50%, #0d0607 80%, #000000 100%)' }}>
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-4 py-20">
+      <section className="relative min-h-screen flex items-center justify-center px-4 py-16 sm:py-20">
         {/* Background Image with low opacity */}
         <div className="absolute inset-0 opacity-[0.08]" style={{ transform: `translateY(${parallaxOffset * 0.2}px)` }}>
           <img
@@ -103,7 +103,7 @@ function App() {
 
           {/* Subheadline */}
           <p className="text-base md:text-lg lg:text-xl text-white max-w-4xl mx-auto font-light leading-relaxed">
-           ESQUEÇA os métodos vazios e as frases de auto ajuda. Aqui, você vai sentir a diferença em poucos dias quando a neurociência começa a trabalhar a seu favor.
+           Esqueça os métodos vazios e as frases de auto ajuda. Aqui, você vai sentir a diferença em poucos dias quando a neurociência começa a trabalhar a seu favor.
           </p>
 
           {/* VSL Section */}
@@ -153,7 +153,7 @@ function App() {
       </section>
 
       {/* Problem Section */}
-      <FadeInSection className="relative py-24 px-4" style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0), rgba(13,6,7,0.3), rgba(0,0,0,0))' }}>
+      <FadeInSection className="relative py-16 sm:py-20 md:py-24 px-4" style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0), rgba(13,6,7,0.3), rgba(0,0,0,0))' }}>
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="text-center space-y-6">
             <p className="text-responsive text-gradient-gold font-bold leading-relaxed">
@@ -213,8 +213,8 @@ function App() {
       </FadeInSection>
 
       {/* Solution Section */}
-      <FadeInSection className="relative py-24 px-4" style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0), rgba(212,175,55,0.02), rgba(0,0,0,0))' }}>
-        <div className="max-w-5xl mx-auto space-y-12">
+      <FadeInSection className="relative py-16 sm:py-20 md:py-24 px-4" style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0), rgba(212,175,55,0.02), rgba(0,0,0,0))' }}>
+        <div className="max-w-5xl mx-auto space-y-8 md:space-y-12">
           <div className="text-center space-y-4">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-gradient-gold">
               O Método da Mulher Inabalável
@@ -279,7 +279,7 @@ function App() {
       </FadeInSection>
 
       {/* Scientific Base Section */}
-      <FadeInSection className="relative py-24 px-4">
+      <FadeInSection className="relative py-16 sm:py-20 md:py-24 px-4">
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="text-center space-y-4">
             <Brain className="w-12 h-12 md:w-16 md:h-16 text-amber-500/70 mx-auto" />
@@ -309,8 +309,8 @@ function App() {
       </FadeInSection>
 
       {/* Results Timeline */}
-      <FadeInSection className="relative py-24 px-4" style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0), rgba(236,72,153,0.02), rgba(0,0,0,0))' }}>
-        <div className="max-w-4xl mx-auto space-y-12 md:space-y-16">
+      <FadeInSection className="relative py-16 sm:py-20 md:py-24 px-4" style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0), rgba(236,72,153,0.02), rgba(0,0,0,0))' }}>
+        <div className="max-w-4xl mx-auto space-y-8 md:space-y-12">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-gradient-rose text-center">
             Sua jornada de transformação
           </h2>
@@ -345,8 +345,8 @@ function App() {
       </FadeInSection>
 
       {/* Testimonials Section */}
-      <FadeInSection className="relative py-24 px-4">
-        <div className="max-w-5xl mx-auto space-y-12">
+      <FadeInSection className="relative py-16 sm:py-20 md:py-24 px-4">
+        <div className="max-w-5xl mx-auto space-y-8 md:space-y-12">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-gradient-gold text-center">
             Elas sentiram a transformação
           </h2>
@@ -360,7 +360,7 @@ function App() {
       </FadeInSection>
 
       {/* Offer Section with Timer */}
-      <FadeInSection className="relative py-24 px-4" style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0), rgba(212,175,55,0.03), rgba(0,0,0,0))' }}>
+      <FadeInSection className="relative py-16 sm:py-20 md:py-24 px-4" style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0), rgba(212,175,55,0.03), rgba(0,0,0,0))' }}>
         <div className="max-w-3xl mx-auto text-center space-y-8">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-gradient-gold">
             Oferta Exclusiva
@@ -412,7 +412,7 @@ function App() {
       </FadeInSection>
 
       {/* Access Section */}
-      <FadeInSection className="relative py-24 px-4">
+      <FadeInSection className="relative py-16 sm:py-20 md:py-24 px-4">
         <div className="max-w-3xl mx-auto text-center space-y-6">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-gradient-rose">
             Acesso ao Método
