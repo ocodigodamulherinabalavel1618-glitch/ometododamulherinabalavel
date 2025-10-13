@@ -156,8 +156,8 @@ function App() {
       <FadeInSection className="relative py-24 px-4" style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0), rgba(13,6,7,0.3), rgba(0,0,0,0))' }}>
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="text-center space-y-6">
-            <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
-              Você não está sozinha nessa sensação.
+            <p className="text-responsive text-gradient-gold font-bold leading-relaxed">
+              Você não está sozinha nessa.
             </p>
             <p className="text-base md:text-lg lg:text-xl text-white leading-relaxed">
               Aquele peso de olhar no espelho e não reconhecer mais quem você era.

@@ -105,4 +105,8 @@
   .animate-pulse-text {
     animation: pulse-text 2s ease-in-out infinite;
   }
+
+  .text-responsive {
+    font-size: clamp(2rem, 15vw, 5rem);
+  }
 }
