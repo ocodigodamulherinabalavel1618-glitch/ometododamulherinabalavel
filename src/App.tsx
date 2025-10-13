@@ -37,43 +37,7 @@ function App() {
   const [parallaxOffset, setParallaxOffset] = useState(0);
 
   useEffect(() => {
-    const handleContextMenu = (e: MouseEvent) => {
-      e.preventDefault();
-    };
-
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (
-        e.key === 'F12' ||
-        (e.ctrlKey && e.shiftKey && e.key === 'I') ||
-        (e.ctrlKey && e.shiftKey && e.key === 'J') ||
-        (e.ctrlKey && e.key === 'U')
-      ) {
-        e.preventDefault();
-      }
-    };
-
-    const detectDevTools = () => {
-      const threshold = 160;
-      const widthThreshold = window.outerWidth - window.innerWidth > threshold;
-      const heightThreshold = window.outerHeight - window.innerHeight > threshold;
-
-      if (widthThreshold || heightThreshold) {
-        document.body.innerHTML = '';
-      }
-    };
-
-    window.addEventListener('contextmenu', handleContextMenu);
-    window.addEventListener('keydown', handleKeyDown);
-    const interval = setInterval(detectDevTools, 1000);
-
-    return () => {
-      window.removeEventListener('contextmenu', handleContextMenu);
-      window.removeEventListener('keydown', handleKeyDown);
-      clearInterval(interval);
-    };
-  }, []);
-
-  useEffect(() => {
+    const handleScroll = () => {
       setParallaxOffset(window.pageYOffset);
     };
 
@@ -192,7 +156,7 @@ function App() {
       <FadeInSection className="relative py-24 px-4" style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0), rgba(13,6,7,0.3), rgba(0,0,0,0))' }}>
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="text-center space-y-6">
-            <p className="text-lg md:text-xl lg:text-2xl text-white leading-relaxed">
+            <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
               Você não está sozinha nessa sensação.
             </p>
             <p className="text-base md:text-lg lg:text-xl text-white leading-relaxed">
