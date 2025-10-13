@@ -1,3 +1,4 @@
+import FadeInSection from './FadeInSection';
 import { Sparkles, Heart, Brain, Shield, Crown, CheckCircle2, Lock } from 'lucide-react';
 import WhatsAppIcon from './WhatsappIcon';
 import { useState, useEffect } from 'react';
@@ -33,6 +34,20 @@ function App() {
     seconds: 0
   });
 
+  const [parallaxOffset, setParallaxOffset] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setParallaxOffset(window.pageYOffset);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   useEffect(() => {
     // Define o tempo final (1 hora a partir de agora)
     const endTime = new Date().getTime() + (1 * 60 * 60 * 1000);
@@ -61,7 +76,7 @@ function App() {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center px-4 py-20">
         {/* Background Image with low opacity */}
-        <div className="absolute inset-0 opacity-[0.08]">
+        <div className="absolute inset-0 opacity-[0.08]" style={{ transform: `translateY(${parallaxOffset * 0.2}px)` }}>
           <img
             src="https://images.pexels.com/photos/3768894/pexels-photo-3768894.jpeg?auto=compress&cs=tinysrgb&w=1920"
             alt="Background"
@@ -138,7 +153,7 @@ function App() {
       </section>
 
       {/* Problem Section */}
-      <section className="relative py-24 px-4" style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0), rgba(13,6,7,0.3), rgba(0,0,0,0))' }}>
+      <FadeInSection className="relative py-24 px-4" style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0), rgba(13,6,7,0.3), rgba(0,0,0,0))' }}>
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="text-center space-y-6">
             <p className="text-lg md:text-xl lg:text-2xl text-white leading-relaxed">
@@ -195,10 +210,10 @@ function App() {
             </div>
           </div>
         </div>
-      </section>
+      </FadeInSection>
 
       {/* Solution Section */}
-      <section className="relative py-24 px-4" style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0), rgba(212,175,55,0.02), rgba(0,0,0,0))' }}>
+      <FadeInSection className="relative py-24 px-4" style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0), rgba(212,175,55,0.02), rgba(0,0,0,0))' }}>
         <div className="max-w-5xl mx-auto space-y-12">
           <div className="text-center space-y-4">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-gradient-gold">
@@ -261,10 +276,10 @@ function App() {
             </button>
           </div>
         </div>
-      </section>
+      </FadeInSection>
 
       {/* Scientific Base Section */}
-      <section className="relative py-24 px-4">
+      <FadeInSection className="relative py-24 px-4">
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="text-center space-y-4">
             <Brain className="w-12 h-12 md:w-16 md:h-16 text-amber-500/70 mx-auto" />
@@ -291,10 +306,10 @@ function App() {
             </p>
           </div>
         </div>
-      </section>
+      </FadeInSection>
 
       {/* Results Timeline */}
-      <section className="relative py-24 px-4" style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0), rgba(236,72,153,0.02), rgba(0,0,0,0))' }}>
+      <FadeInSection className="relative py-24 px-4" style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0), rgba(236,72,153,0.02), rgba(0,0,0,0))' }}>
         <div className="max-w-4xl mx-auto space-y-12 md:space-y-16">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-gradient-rose text-center">
             Sua jornada de transformação
@@ -327,10 +342,10 @@ function App() {
             ))}
           </div>
         </div>
-      </section>
+      </FadeInSection>
 
       {/* Testimonials Section */}
-      <section className="relative py-24 px-4">
+      <FadeInSection className="relative py-24 px-4">
         <div className="max-w-5xl mx-auto space-y-12">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-gradient-gold text-center">
             Elas sentiram a transformação
@@ -342,10 +357,10 @@ function App() {
             <img src={image3} alt="Testimonial 3" className="rounded-2xl border border-amber-600/10" />
           </div>
         </div>
-      </section>
+      </FadeInSection>
 
       {/* Offer Section with Timer */}
-      <section className="relative py-24 px-4" style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0), rgba(212,175,55,0.03), rgba(0,0,0,0))' }}>
+      <FadeInSection className="relative py-24 px-4" style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0), rgba(212,175,55,0.03), rgba(0,0,0,0))' }}>
         <div className="max-w-3xl mx-auto text-center space-y-8">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-gradient-gold">
             Oferta Exclusiva
@@ -396,10 +411,10 @@ function App() {
             Quero sentir o poder que sempre foi meu
           </button>
         </div>
-      </section>
+      </FadeInSection>
 
       {/* Access Section */}
-      <section className="relative py-24 px-4">
+      <FadeInSection className="relative py-24 px-4">
         <div className="max-w-3xl mx-auto text-center space-y-6">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-gradient-rose">
             Acesso ao Método
@@ -410,10 +425,10 @@ function App() {
             para se reconectar com sua força natural e se tornarem verdadeiramente inabaláveis.
           </p>
         </div>
-      </section>
+      </FadeInSection>
 
       {/* Guarantee Section */}
-      <section className="relative py-16 px-4" style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0), rgba(212,175,55,0.02), rgba(0,0,0,0))' }}>
+      <FadeInSection className="relative py-16 px-4" style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0), rgba(212,175,55,0.02), rgba(0,0,0,0))' }}>
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8 text-center">
             <div className="flex items-center gap-2">
@@ -436,7 +451,7 @@ function App() {
             </a>
           </div>
         </div>
-      </section>
+      </FadeInSection>
 
       {/* Footer */}
       <footer className="relative py-12 px-4 border-t border-amber-600/10">
