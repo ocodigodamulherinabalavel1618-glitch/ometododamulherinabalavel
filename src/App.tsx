@@ -144,7 +144,7 @@ function App() {
             >
               <p className="text-sm">
                 De <span className="line-through text-gray-500">R$52,90</span> por{' '}
-                <span className="text-2xl font-bold text-gradient-rose">R$19,90</span>
+                <span className="text-2xl font-bold text-gradient-rose font-serif">R$19,90</span>
               </p>
               <p className="text-xs text-gray-400 mt-1">oferta exclusiva por tempo limitado</p>
             </button>
@@ -388,7 +388,7 @@ function App() {
             </div>
             <div className="text-center space-y-2">
               <p className="text-lg text-gray-400 line-through">De R$ 52,90</p>
-              <p className="text-5xl font-bold text-gradient-rose animate-pulse-text">Por Apenas<br/>R$ 19,90</p>
+              <p className="text-5xl font-bold text-gradient-rose animate-pulse-text font-serif">Por Apenas<br/>R$ 19,90</p>
               <div className="flex items-center justify-center gap-2 text-amber-500/80 pt-4">
                 <CheckCircle2 className="w-5 h-5" />
                 <p className="text-sm">Acesso imediato e vitalício</p>
@@ -397,7 +397,7 @@ function App() {
           </div>
 
           <p className="text-xl md:text-2xl lg:text-3xl text-amber-500/90 font-normal leading-relaxed">
-            Acesso imediato. Resultados que você sente e as pessoas ao seu redor desacreditam.
+            Acesso imediato. O resultado fala tão alto que nem precisa de promessa.
           </p>
 
           <button
