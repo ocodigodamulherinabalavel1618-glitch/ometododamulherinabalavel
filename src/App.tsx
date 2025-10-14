@@ -1,10 +1,11 @@
 import FadeInSection from './FadeInSection';
-import { Sparkles, Heart, Brain, Shield, Crown, CheckCircle2, Lock } from 'lucide-react';
+import { Sparkles, Heart, Brain, Shield, Crown, CheckCircle2, Lock, ShieldCheck, User } from 'lucide-react';
 import WhatsAppIcon from './WhatsappIcon';
 import { useState, useEffect } from 'react';
 import image1 from '../.bolt/1.png';
 import image2 from '../.bolt/2.png';
 import image3 from '../.bolt/3.png';
+import seloGarantia from '../.bolt/selo 30 dia.png';
 
 const removeFloating = () => {
   document
@@ -420,6 +421,23 @@ function App() {
           <p className="text-base md:text-lg lg:text-xl text-gray-400 leading-relaxed">
             Um processo criado a partir da neurociência e da experiência real de mulheres que decidiram assumir o próprio poder.
 Simples na forma. Profundo nos resultados. Uma escolha que muda o jeito como você se enxerga e como o mundo passa a enxergar você.
+          </p>
+        </div>
+      </FadeInSection>
+
+      {/* User-requested Guarantee Section */}
+      <FadeInSection className="relative pt-8 sm:pt-10 md:pt-12 pb-16 sm:pb-20 md:pb-24 px-4">
+        <div className="max-w-3xl mx-auto text-center space-y-6">
+          <img src={seloGarantia} alt="Selo de Garantia 30 dias" className="w-48 mx-auto object-contain" />
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-gradient-gold">
+            Garantia de Confiança
+            <span className="block">30 dias</span>
+          </h2>
+          <p className="text-base md:text-lg lg:text-xl text-gray-400 leading-relaxed">
+            Assim como a neurociência, acreditamos em resultados reais, e eles começam com confiança.<br />
+            Por isso, seu acesso tem garantia total de 30 dias.<br />
+            Se por qualquer motivo você sentir que o método não é pra você, devolvemos 100% do valor.<br />
+            Sem perguntas. Sem burocracia. Só respeito pela sua escolha.
           </p>
         </div>
       </FadeInSection>
