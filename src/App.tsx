@@ -169,7 +169,7 @@ function App() {
             <div className="pt-8">
               <button
                 onClick={handleShowRestOfPage}
-                className="group relative px-8 md:px-10 py-4 md:py-5 text-black font-semibold text-base md:text-lg rounded-full hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-pulse-glow"
+                className="group relative px-8 md:px-10 py-4 md:py-5 text-black font-semibold text-base md:text-lg rounded-full hover:shadow-2xl transition-all duration-300 hover:scale-105"
                 style={{ background: 'linear-gradient(135deg, #d4af37 0%, #f4e5c3 50%, #d4af37 100%)' }}
               >
                 <Crown className="inline-block w-5 h-5 mr-2 -mt-1 animate-float" />
@@ -266,8 +266,7 @@ function App() {
                 <p className="text-white">Mockup de imagem</p>
               </div>
               <div className="text-center space-y-2">
-                <p className="text-lg text-gray-400 line-through">R$ 19,90</p>
-                <p className="text-5xl font-bold text-gradient-rose animate-pulse-text font-serif">Por R$ 00,00</p>
+                <p className="text-5xl font-bold text-gradient-wine-white font-serif">Por R$ 00,00 <span className="text-lg text-gray-400 line-through">R$ 19,90</span></p>
               </div>
             </div>
           </FadeInSection>
@@ -315,7 +314,7 @@ function App() {
 
               <button
                 onClick={handleCTA}
-                className="group relative px-8 md:px-10 py-4 md:py-5 text-black font-semibold text-base md:text-lg rounded-full hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-pulse-glow"
+                className="group relative px-8 md:px-10 py-4 md:py-5 text-black font-semibold text-base md:text-lg rounded-full hover:shadow-2xl transition-all duration-300 hover:scale-105"
                 style={{ background: 'linear-gradient(135deg, #d4af37 0%, #f4e5c3 50%, #d4af37 100%)' }}
               >
                 <Crown className="inline-block w-5 h-5 mr-2 -mt-1 animate-float" />
