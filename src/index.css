@@ -32,6 +32,13 @@
     background-clip: text;
   }
 
+  .text-gradient-wine-white {
+    background: linear-gradient(135deg, #800020 0%, #ffffff 50%, #800020 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
   .border-gradient {
     position: relative;
   }

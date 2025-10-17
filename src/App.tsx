@@ -188,10 +188,9 @@ function App() {
           <FadeInSection className="relative py-16 sm:py-20 md:py-24 px-4 mt-24">
             <div className="max-w-5xl mx-auto space-y-8 md:space-y-12">
               <div className="text-center space-y-4">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-gradient-wine-white">
-                  A Chave Para Reprogramação Mental
-                </h2>
-              </div>
+                                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-gradient-wine-white">
+                                    A Chave Para Reprogramação Mental
+                                  </h2>              </div>
               <p className="text-base md:text-lg lg:text-xl text-white text-center max-w-3xl mx-auto leading-relaxed">
                 Uma fórmula neurocientífica que usa práticas simples e consistentes
                 para transformar crenças limitantes em alicerces de poder interior.
@@ -260,8 +259,8 @@ function App() {
           {/* Bonus Section */}
           <FadeInSection className="relative py-16 sm:py-20 md:py-24 px-4">
             <div className="max-w-3xl mx-auto text-center space-y-8">
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-gradient-gold">
-                Somente HOJE! Bonus exclusivo para quem adquirir o método:
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-gradient-wine-white">
+                Somente HOJE! Bonus exclusivo GRÁTIS:
               </h2>
               <div className="p-8 bg-gray-800 rounded-lg">
                 <p className="text-white">Mockup de imagem</p>
