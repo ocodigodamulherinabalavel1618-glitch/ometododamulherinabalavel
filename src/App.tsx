@@ -124,6 +124,13 @@ function App() {
     }
   };
 
+  const handleScrollToVSL = () => {
+    const vslSection = document.getElementById('vsl-section');
+    if (vslSection) {
+      vslSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <div className="min-h-screen text-white overflow-hidden" style={{ background: 'linear-gradient(to bottom, #000000 0%, #0d0607 20%, #0a0506 50%, #0d0607 80%, #000000 100%)' }}>
       {/* Hero Section */}
@@ -155,8 +162,18 @@ function App() {
            Esse é o método que milhares de mulheres usam para transformar suas vidas e reprogramar suas mentes.
           </p>
 
+          <div className="pt-8">
+            <button
+              onClick={handleScrollToVSL}
+              className="group relative px-8 md:px-10 py-4 md:py-5 text-white font-semibold text-base md:text-lg rounded-full hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-pulse-glow"
+              style={{ background: 'rgba(0, 0, 0, 0.3)', border: '1px solid rgba(212, 175, 55, 0.2)' }}
+            >
+              Esse método é pra quem decidiu dar um basta nisso! Assista o vídeo ou clique no botão abaixo.
+            </button>
+          </div>
+
           {/* VSL Section */}
-          <div className="space-y-6">
+          <div id="vsl-section" className="space-y-6">
             {/* YouTube Shorts Embed */}
             <div className="relative max-w-md mx-auto aspect-[9/16] rounded-2xl overflow-hidden border border-amber-600/10" style={{ background: 'rgba(0, 0, 0, 0.3)' }}>
               <div id="youtube-player" className="absolute inset-0 w-full h-full"></div>
@@ -173,7 +190,7 @@ function App() {
                 style={{ background: 'linear-gradient(135deg, #d4af37 0%, #f4e5c3 50%, #d4af37 100%)' }}
               >
                 <Crown className="inline-block w-5 h-5 mr-2 -mt-1 animate-float" />
-                Quero ir para a oferta!
+                Quero conhecer o Método!
               </button>
             </div>
           )}
@@ -211,6 +228,19 @@ function App() {
             </div>
           </FadeInSection>
 
+          {/* New Section: De mulher pra mulher */}
+          <FadeInSection className="relative py-16 sm:py-20 md:py-24 px-4">
+            <div className="max-w-4xl mx-auto text-center space-y-8">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-white">
+                De mulher pra mulher: eu também já me senti presa em mim mesma.
+              </h2>
+              {/* Add content for this section here */}
+              <p className="text-base md:text-lg lg:text-xl text-white leading-relaxed">
+                Oi, eu sou a Juliana.Por muito tempo, achei
+              </p>
+            </div>
+          </FadeInSection>
+
           {/* Scientific Base Section */}
           <FadeInSection className="relative py-16 sm:py-20 md:py-24 px-4">
             <div className="max-w-4xl mx-auto space-y-8">
@@ -235,6 +265,16 @@ function App() {
                   essas trilhas</span>. Pode criar novos caminhos. Pode ensinar seu cérebro a acreditar em você novamente.
                 </p>
 
+              </div>
+              <div className="text-center pt-8">
+                <button
+                  onClick={handleCTA}
+                  className="group relative px-8 md:px-10 py-4 md:py-5 text-black font-semibold text-base md:text-lg rounded-full hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-pulse-glow"
+                  style={{ background: 'linear-gradient(135deg, #d4af37 0%, #f4e5c3 50%, #d4af37 100%)' }}
+                >
+                  <Crown className="inline-block w-5 h-5 mr-2 -mt-1 animate-float" />
+                  Quero sentir o poder que sempre foi meu
+                </button>
               </div>
             </div>
           </FadeInSection>
@@ -268,6 +308,16 @@ function App() {
               <div className="text-center space-y-2">
                 <p className="text-5xl font-bold text-gradient-wine-white font-serif">Por R$ 00,00 <span className="text-lg text-gray-400 line-through">R$ 19,90</span></p>
               </div>
+              <div className="text-center pt-8">
+                <button
+                  onClick={handleCTA}
+                  className="group relative px-8 md:px-10 py-4 md:py-5 text-black font-semibold text-base md:text-lg rounded-full hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-pulse-glow"
+                  style={{ background: 'linear-gradient(135deg, #d4af37 0%, #f4e5c3 50%, #d4af37 100%)' }}
+                >
+                  <Crown className="inline-block w-5 h-5 mr-2 -mt-1 animate-float" />
+                  Quero sentir o poder que sempre foi meu
+                </button>
+              </div>
             </div>
           </FadeInSection>
 
@@ -280,7 +330,7 @@ function App() {
 
               <div className="w-full max-w-md mx-auto bg-black/20 backdrop-blur-lg rounded-2xl border border-amber-500/20 p-8 space-y-6 shadow-lg shadow-amber-500/10">
                 <div className="text-center">
-                  <p className="text-lg text-amber-400/80">Oferta exclusiva termina em:</p>
+                  <p className="text-lg text-amber-400/80">Termina em:</p>
                   <div className="flex justify-center items-center gap-4 mt-2">
                     <div className="flex flex-col items-center">
                       <span className="text-4xl font-bold text-white">{String(timeLeft.hours).padStart(2, '0')}</span>
@@ -382,9 +432,7 @@ function App() {
           {/* Footer */}
           <footer className="relative py-12 px-4 border-t border-amber-600/10">
             <div className="max-w-4xl mx-auto text-center space-y-6">
-              <h3 className="text-xl md:text-2xl font-serif text-amber-400/80">
-                O Método da Mulher Inabalável
-              </h3>
+
               <p className="text-sm text-gray-500">
                 © 2025 – Todos os direitos reservados
               </p>
