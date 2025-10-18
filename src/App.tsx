@@ -190,8 +190,6 @@ A verdade é simples: não é o mundo que te bloqueia. É você.
 A sua própria mente virou sua inimiga. Ela te sabota, te trava e ainda te convence de que não dá pra mudar.
 Mas dá.
 Existe um método capaz de silenciar a mente sabotadora e reprogramar o seu cérebro para te fazer vencer, sentir e viver de verdade.
-O vazio não desaparece com força de vontade ou frases motivacionais.
-Ele desaparece quando você assume o controle da sua mente.
 E essa é exatamente a transformação que A Chave Para Reprogramação Mental provoca.
 Agora é simples: ou você continua sendo refém da própria mente, ou decide, de uma vez por todas, reprogramar-se para vencer.
             </p>
