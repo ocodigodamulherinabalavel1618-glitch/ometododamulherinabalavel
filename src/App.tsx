@@ -157,20 +157,11 @@ function App() {
               <div id="youtube-player" className="absolute inset-0 w-full h-full"></div>
             </div>
 
-                      <div style={{
-                        borderRadius: '1rem',
-            padding: '0.25rem', // Small padding for the glow
-                        background: 'linear-gradient(135deg, #d4af37 0%, #f4e5c3 50%, #d4af37 100%)',
-            boxShadow: '0 0 15px 3px rgba(212, 175, 55, 0.5)', // Golden glow
-                        display: 'block',
-                        margin: '0 auto',
-                        maxWidth: '260px'
-                      }}>
-                        <video controls autoplay loop muted style={{ width: '100%', display: 'block', borderRadius: '0.75rem' }}>
-                          <source src="../.bolt/YTDown.com_Shorts_Media_zG09GhyL5Eg_001_1080p.mp4" type="video/mp4" />
-                          Your browser does not support the video tag.
-                        </video>
-                      </div>
+            <video controls autoplay loop muted style={{ width: '100%', maxWidth: '250px', display: 'block', margin: '0 auto' }}>
+              <source src="../.bolt/YTDown.com_Shorts_Media_zG09GhyL5Eg_001_1080p.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
             <div className="pt-8">
               <button
                 onClick={handleScrollToVSL}
@@ -181,7 +172,7 @@ function App() {
               </button>
             </div>
             
-            <div className="pt-4">
+            <div className="pt-8">
               <button
                 onClick={handleScrollToBonus}
                 className="group relative px-8 md:px-10 py-4 md:py-5 text-black font-semibold text-base md:text-lg rounded-full hover:shadow-2xl transition-all duration-300 hover:scale-105"
@@ -226,7 +217,7 @@ function App() {
         </FadeInSection>
 
         {/* New Section: De mulher pra mulher */}
-        <FadeInSection className="relative py-16 sm:py-20 md:py-24 px-4 mt-16">
+        <FadeInSection className="relative py-16 sm:py-20 md:py-24 px-4">
           <div className="absolute inset-0 opacity-30" style={{ transform: `translateY(${parallaxOffset * 0.1 - 200}px)` }}>
             <img src={julianaImage} alt="Juliana" className="w-full h-full object-cover" />
           </div>
