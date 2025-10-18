@@ -2,10 +2,8 @@ import FadeInSection from './FadeInSection';
 import { Sparkles, Heart, Brain, Shield, Crown, CheckCircle2, Lock, ShieldCheck, User } from 'lucide-react';
 import WhatsAppIcon from './WhatsappIcon';
 import { useState, useEffect, useRef } from 'react';
-import image1 from '../.bolt/1.png';
-import image2 from '../.bolt/2.png';
-import image3 from '../.bolt/3.png';
-import seloGarantia from '../.bolt/selo 30 dia.png';
+
+import bonusImage from '../.bolt/ChatGPT_Image_Oct_17__2025__06_17_21_PM-removebg-preview.png';
 
 const removeFloating = () => {
   document
@@ -137,12 +135,7 @@ function App() {
       <section className="relative min-h-screen flex items-center justify-center px-4 py-16 sm:py-20">
         {/* Background Image with low opacity */}
         <div className="absolute inset-0 opacity-[0.08]" style={{ transform: `translateY(${parallaxOffset * 0.2}px)` }}>
-          <img
-            src="https://images.pexels.com/photos/3768894/pexels-photo-3768894.jpeg?auto=compress&cs=tinysrgb&w=1920"
-            alt="Background"
-            className="w-full h-full object-cover object-center"
-            style={{ objectPosition: '50% 30%' }}
-          />
+
         </div>
 
         {/* Subtle golden glow background */}
@@ -288,11 +281,7 @@ function App() {
                 Elas sentiram a transformação
               </h2>
 
-              <div className="flex flex-col md:flex-row gap-6 md:gap-8">
-                <img src={image1} alt="Testimonial 1" className="rounded-2xl border border-amber-600/10" />
-                <img src={image2} alt="Testimonial 2" className="rounded-2xl border border-amber-600/10" />
-                <img src={image3} alt="Testimonial 3" className="rounded-2xl border border-amber-600/10" />
-              </div>
+
             </div>
           </FadeInSection>
 
@@ -303,7 +292,7 @@ function App() {
                 Somente HOJE! Bonus exclusivo GRÁTIS:
               </h2>
               <div className="p-8 bg-gray-800 rounded-lg">
-                <p className="text-white">Mockup de imagem</p>
+                <img src={bonusImage} alt="Bônus Exclusivo" className="w-full h-auto mx-auto" />
               </div>
               <div className="text-center space-y-2">
                 <p className="text-5xl font-bold text-gradient-wine-white font-serif">Por R$ 00,00 <span className="text-lg text-gray-400 line-through">R$ 19,90</span></p>
@@ -389,7 +378,7 @@ function App() {
           {/* User-requested Guarantee Section */}
           <FadeInSection className="relative pt-8 sm:pt-10 md:pt-12 pb-16 sm:pb-20 md:pb-24 px-4">
             <div className="max-w-3xl mx-auto text-center space-y-6">
-              <img src={seloGarantia} alt="Selo de Garantia 30 dias" className="w-48 mx-auto object-contain" />
+
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-gradient-gold">
                 Garantia de Confiança
                 <span className="block">30 dias</span>
