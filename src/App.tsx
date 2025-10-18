@@ -185,9 +185,9 @@ function App() {
                                 </h2>              </div>
             <p className="text-base md:text-lg lg:text-xl text-white text-center max-w-3xl mx-auto leading-relaxed">
               Você não está travada, está sendo destruída pela própria mente.
-Ela te sabota, te drena e te faz acreditar que nunca vai vencer.
-A Chave Para Reprogramação Mental quebra esse ciclo e apaga o vazio de dentro pra fora.
-Ou você domina sua mente agora, ou continua sendo dominada por ela.
+              Ela te sabota, te drena e te faz acreditar que nunca vai vencer.
+              A Chave Para Reprogramação Mental quebra esse ciclo e apaga o vazio de dentro pra fora.
+              Ou você domina sua mente agora, ou continua sendo dominada por ela.
 
 
 
