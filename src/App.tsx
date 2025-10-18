@@ -184,8 +184,16 @@ function App() {
                                   A chave para a reprogramação mental
                                 </h2>              </div>
             <p className="text-base md:text-lg lg:text-xl text-white text-center max-w-3xl mx-auto leading-relaxed">
-              Uma fórmula neurocientífica que usa práticas simples e consistentes
-              para transformar crenças limitantes em alicerces de poder interior.
+              Quantas vezes você vai se destruir fingindo que está tudo bem?
+Quantas promessas quebradas, quantas noites vazias, quantas vezes vai se sabotar e chamar isso de falta de sorte?
+A verdade é simples: não é o mundo que te bloqueia. É você.
+A sua própria mente virou sua inimiga. Ela te sabota, te trava e ainda te convence de que não dá pra mudar.
+Mas dá.
+Existe um método capaz de silenciar a mente sabotadora e reprogramar o seu cérebro para te fazer vencer, sentir e viver de verdade.
+O vazio não desaparece com força de vontade ou frases motivacionais.
+Ele desaparece quando você assume o controle da sua mente.
+E essa é exatamente a transformação que A Chave Para Reprogramação Mental provoca.
+Agora é simples: ou você continua sendo refém da própria mente, ou decide, de uma vez por todas, reprogramar-se para vencer.
             </p>
 
 
