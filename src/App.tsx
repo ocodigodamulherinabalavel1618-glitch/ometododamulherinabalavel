@@ -2,6 +2,7 @@ import FadeInSection from './FadeInSection';
 import { Sparkles, Heart, Brain, Shield, Crown, CheckCircle2, Lock, ShieldCheck, User } from 'lucide-react';
 import WhatsAppIcon from './WhatsappIcon';
 import { useState, useEffect, useRef } from 'react';
+import VideoPlayer from './VideoPlayer';
 
 import bonusImage from '../.bolt/ChatGPT_Image_Oct_17__2025__06_17_21_PM-removebg-preview.png';
 import testimonial1 from '../.bolt/1.png';
@@ -83,30 +84,7 @@ function App() {
     return () => clearInterval(timer);
   }, []);
 
-  useEffect(() => {
-    if (window.YT) {
-      createPlayer();
-    } else {
-      const tag = document.createElement('script');
-      tag.src = "https://www.youtube.com/iframe_api";
-      const firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-      window.onYouTubeIframeAPIReady = () => {
-        createPlayer();
-      };
-    }
-
-    return () => {
-      window.onYouTubeIframeAPIReady = null;
-    };
-  }, []);
-
-  const createPlayer = () => {
-    playerRef.current = new window.YT.Player('youtube-player', {
-      videoId: 'zG09GhyL5Eg',
-    });
-  }
 
   const handleScrollToVSL = () => {
     const vslSection = document.getElementById('vsl-section');
