@@ -7,6 +7,7 @@ import bonusImage from '../.bolt/ChatGPT_Image_Oct_17__2025__06_17_21_PM-removeb
 import testimonial1 from '../.bolt/1.png';
 import testimonial2 from '../.bolt/2.png';
 import testimonial3 from '../.bolt/3.png';
+import julianaImage from '../.bolt/Juliana.png';
 
 const removeFloating = () => {
   document
@@ -210,7 +211,10 @@ function App() {
 
         {/* New Section: De mulher pra mulher */}
         <FadeInSection className="relative py-16 sm:py-20 md:py-24 px-4">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
+          <div className="absolute inset-0 opacity-30" style={{ transform: `translateY(${parallaxOffset * 0.1 - 200}px)` }}>
+            <img src={julianaImage} alt="Juliana" className="w-full h-full object-cover" />
+          </div>
+          <div className="relative max-w-4xl mx-auto text-center space-y-8">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-white">
               De mulher para mulher: eu também já me senti presa em mim mesma.
             </h2>
