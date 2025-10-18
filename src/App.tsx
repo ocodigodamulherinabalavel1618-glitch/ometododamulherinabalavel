@@ -148,12 +148,19 @@ function App() {
            Este é o método que milhares de mulheres usam para transformar as suas vidas e reprogramar as suas mentes.
           </p>
 
+
+
           {/* VSL Section */}
           <div id="vsl-section" className="space-y-6 flex flex-col items-center">
             {/* YouTube Shorts Embed */}
             <div className="relative max-w-md mx-auto aspect-[9/16] rounded-2xl overflow-hidden border border-amber-600/10" style={{ background: 'rgba(0, 0, 0, 0.3)' }}>
               <div id="youtube-player" className="absolute inset-0 w-full h-full"></div>
             </div>
+
+            <video controls autoplay loop muted style={{ width: '100%', maxWidth: '250px', display: 'block', margin: '0 auto' }}>
+              <source src="../.bolt/YTDown.com_Shorts_Media_zG09GhyL5Eg_001_1080p.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
 
             <div className="pt-8">
               <button
