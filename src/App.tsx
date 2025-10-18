@@ -214,7 +214,7 @@ function App() {
             </h2>
             {/* Add content for this section here */}
             <p className="text-base md:text-lg lg:text-xl text-white leading-relaxed">
-              Oi, muito prazer! Meu nome é Juliana, tenho 39 anos,  sou casada e tenho 2 filhos. Por muito tempo, achei que o problema era comigo. Eu fazia planos, começava cheia de energia… e, de repente, parava. Sempre com uma desculpa: “não é o momento”, “acho que não vai dar certo”. Até entender que não era preguiça, nem falta de força. Era a minha mente tentando me proteger do que um dia doeu. Foi quando mergulhei na neurociência e descobri como reprogramar esses padrões. E foi assim que criei o método que transformou a minha vida e hoje ajuda tantas mulheres a retomarem o controle da própria mente. Você não precisa lutar contra si mesma. Só precisa aprender a reprogramar a sua mente.
+              Oi, muito prazer! Meu nome é Juliana, tenho 39 anos,  sou casada e tenho 2 filhos e sinceramente, eu andava tão cansada. Por muito tempo, acredito que a tristeza e o vazio era algo  que nunca ia sumir de dentro de mim. Eu fazia planos, começava cheia de energia… e, de repente, parava. Sempre com uma desculpa: “não é o momento”, “acho que não vai dar certo”. Até entender que não era preguiça, nem falta de força. Era a minha mente tentando me proteger do que um dia doeu. Foi quando mergulhei na neurociência e descobri como reprogramar esses padrões. E foi assim que criei o método que transformou a minha vida e hoje ajuda tantas mulheres a retomarem o controle da própria mente. Você não precisa lutar contra si mesma. Só precisa aprender a reprogramar a sua mente.
             </p>
           </div>
         </FadeInSection>
