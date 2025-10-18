@@ -210,7 +210,7 @@ function App() {
           </div>
           <div className="relative max-w-4xl mx-auto text-center space-y-8">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-white">
-              De mulher para mulher: eu também já me senti presa em mim mesma.
+              Sim, eu já me sabotei. Mas foi desse caos que nasceu o meu recomeço.
             </h2>
             {/* Add content for this section here */}
             <p className="text-base md:text-lg lg:text-xl text-white leading-relaxed">
