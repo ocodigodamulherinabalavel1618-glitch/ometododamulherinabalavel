@@ -167,7 +167,7 @@ function App() {
                         maxWidth: '260px'
                       }}>
                         <video controls autoplay loop muted style={{ width: '100%', display: 'block', borderRadius: '0.75rem' }}>
-                          <source src="/bolt/YTDown.com_Shorts_Media_zG09GhyL5Eg_001_1080p.mp4" type="video/mp4" />
+                          <source src="../.bolt/YTDown.com_Shorts_Media_zG09GhyL5Eg_001_1080p.mp4" type="video/mp4" />
                           Your browser does not support the video tag.
                         </video>
                       </div>
@@ -395,7 +395,6 @@ function App() {
         <FadeInSection className="relative pt-8 sm:pt-10 md:pt-12 pb-16 sm:pb-20 md:pb-24 px-4">
           <div className="max-w-3xl mx-auto text-center space-y-6">
 
-            <img src="../.bolt/selo 30 dia.png" alt="Selo de Garantia de 30 Dias" className="w-full h-auto max-w-[150px] mx-auto mb-4" />
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-gradient-gold">
               Garantia de Confiança
               <span className="block">30 dias</span>
