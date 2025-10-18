@@ -284,7 +284,7 @@ function App() {
         <FadeInSection className="relative py-16 sm:py-20 md:py-24 px-4">
           <div id="bonus-section" className="max-w-3xl mx-auto text-center space-y-8">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-white">
-              Você busca a <span className="text-gradient-gold">mudança</span>! <br /> Receba junto:
+              Você busca a <span className="text-gradient-gold">mudança</span>? <br /> Receba junto:
             </h2>
             <div>
               <img src={bonusImage} alt="Bônus Exclusivo" className="w-1/2 h-auto mx-auto" />
