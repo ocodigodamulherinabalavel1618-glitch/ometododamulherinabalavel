@@ -144,7 +144,7 @@ function App() {
                         margin: '0 auto',
                         maxWidth: '260px'
                       }}>
-                        <video controls autoplay loop muted style={{ width: '100%', display: 'block', borderRadius: '0.75rem' }}>
+                        <video controls autoPlay loop muted style={{ width: '100%', display: 'block', borderRadius: '0.75rem' }}>
                           <source src="https://uzvnylkkjdopbbbrqzee.supabase.co/storage/v1/object/public/Reprograme%20seu%20Cerebro/YTDown.com_Shorts_Media_zG09GhyL5Eg_001_1080p%20(1).mp4" type="video/mp4" />
                           Your browser does not support the video tag.
                         </video>
@@ -188,6 +188,7 @@ function App() {
               Ela te sabota, te drena e te faz acreditar que nunca vai vencer.
               A Chave Para Reprogramação Mental quebra esse ciclo e apaga o vazio de dentro pra fora.
               Ou você domina sua mente agora, ou continua sendo dominada por ela.
+            </p>
 
 
 
