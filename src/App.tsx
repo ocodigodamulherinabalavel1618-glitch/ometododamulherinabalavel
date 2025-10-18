@@ -145,7 +145,7 @@ function App() {
                         maxWidth: '260px'
                       }}>
                         <video controls autoplay loop muted style={{ width: '100%', display: 'block', borderRadius: '0.75rem' }}>
-                          <source src="../.bolt/YTDown.com_Shorts_Media_zG09GhyL5Eg_001_1080p.mp4" type="video/mp4" />
+                          <source src="../.bolt/Suprimido.mp4" type="video/mp4" />
                           Your browser does not support the video tag.
                         </video>
                       </div>
