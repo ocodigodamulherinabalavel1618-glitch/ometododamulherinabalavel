@@ -333,7 +333,7 @@ function App() {
                 </div>
               </div>
               <div className="text-center space-y-2">
-                <p className="text-lg text-gray-400 line-through">De R$ 52,90</p>
+                <p className="text-lg text-gray-400 line-through">De R$ 49,90</p>
                 <p className="text-5xl font-bold text-gradient-rose animate-pulse-text font-serif">Por apenas<br/>R$ 19,90</p>
                 <div className="flex items-center justify-center gap-2 text-amber-500/80 pt-4">
                   <CheckCircle2 className="w-5 h-5" />
