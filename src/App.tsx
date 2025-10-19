@@ -123,6 +123,14 @@ function App() {
                         </video>
                       </div>
             
+              <button
+                onClick={handleCTA}
+                className="group relative px-8 md:px-10 py-4 md:py-5 text-black font-semibold text-base md:text-lg rounded-full hover:shadow-2xl transition-all duration-300 hover:scale-105"
+                style={{ background: 'linear-gradient(135deg, #d4af37 0%, #f4e5c3 50%, #d4af37 100%)' }}
+              >
+                <Crown className="inline-block w-5 h-5 mr-2 -mt-1 animate-float" />
+                Quero sentir o poder que sempre foi meu
+              </button>
               <p className="text-gray-400 text-xs mt-2">(Clique 2x)</p>
           </div>
 
