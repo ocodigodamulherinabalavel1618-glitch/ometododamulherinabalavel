@@ -90,7 +90,7 @@ function App() {
 
         <div className="relative max-w-5xl mx-auto text-center space-y-8">
           {/* Headline */}
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif leading-tight text-gray-100">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif font-bold leading-tight text-gray-100">
             Este é o <span className="text-gradient-gold">segredo para reprogramar</span> a sua mente.
           </h1>
 
@@ -127,7 +127,7 @@ function App() {
                       }}>
                         <video controls autoPlay loop muted style={{ width: '100%', display: 'block', borderRadius: '0.75rem' }}>
                           <source src="https://uzvnylkkjdopbbbrqzee.supabase.co/storage/v1/object/public/Reprograme%20seu%20Cerebro/YTDown.com_Shorts_Media_zG09GhyL5Eg_001_1080p%20(1).mp4" type="video/mp4" />
-                          Your browser does not support the video tag.
+                        
                         </video>
                       </div>
             
@@ -260,11 +260,18 @@ function App() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-white">
               Promoção somente <span className="text-gradient-gold">hoje</span>! <br /> Receba junto:
             </h2>
+<h3 className="text-2xl md:text-3xl text-gradient-wine-white">
+              O Fim da Ansiedade <br />
+              <span className="text-xl md:text-2xl">Aprenda a Silenciar o Caos</span>
+            </h3>
+            <p className="text-base md:text-lg text-white max-w-2xl mx-auto leading-relaxed">
+              A ansiedade te domina, rouba seu ar e controla seus dias. Mas dentro da sua mente existe um interruptor e este bônus te mostra como ligá-lo. Quando você ativa esse poder, o caos se cala, o medo some, e você finalmente está livre.
+            </p>
             <div>
               <img src={bonusImage} alt="Bônus Exclusivo" className="w-1/2 h-auto mx-auto" />
             </div>
             <div className="text-center space-y-2">
-              <p className="text-lg text-gray-400">De <span className="line-through">R$19,90</span> por R$00,00</p>
+              <p className="text-lg text-gray-400">De <span className="line-through">R$19,90</span> por <span className="animate-pulse">R$00,00</span></p>
             </div>
             <div className="text-center pt-8">
               <button
