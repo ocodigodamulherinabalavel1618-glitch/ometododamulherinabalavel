@@ -132,6 +132,7 @@ function App() {
                 <Crown className="inline-block w-5 h-5 mr-2 -mt-1 animate-float" />
                 Quero sentir o poder que sempre foi meu
               </button>
+              <p className="text-gray-400 text-xs mt-2">(clique 2x)</p>
             </div>
           </div>
 
@@ -165,6 +166,7 @@ function App() {
                 <Crown className="inline-block w-5 h-5 mr-2 -mt-1 animate-float" />
                 Quero sentir o poder que sempre foi meu
               </button>
+              <p className="text-gray-400 text-xs mt-2">(clique 2x)</p>
             </div>
           </div>
         </FadeInSection>
@@ -219,6 +221,7 @@ function App() {
                 <Crown className="inline-block w-5 h-5 mr-2 -mt-1 animate-float" />
                 Quero sentir o poder que sempre foi meu
               </button>
+              <p className="text-gray-400 text-xs mt-2">(clique 2x)</p>
             </div>
           </div>
         </FadeInSection>
@@ -274,6 +277,7 @@ function App() {
                 <Crown className="inline-block w-5 h-5 mr-2 -mt-1 animate-float" />
                 Quero sentir o poder que sempre foi meu
               </button>
+              <p className="text-gray-400 text-xs mt-2">(clique 2x)</p>
             </div>
           </div>
         </FadeInSection>
@@ -327,6 +331,7 @@ function App() {
               <Crown className="inline-block w-5 h-5 mr-2 -mt-1 animate-float" />
               Quero sentir o poder que sempre foi meu
             </button>
+            <p className="text-gray-400 text-xs mt-2">(clique 2x)</p>
           </div>
         </FadeInSection>
 

@@ -14,7 +14,7 @@ const FadeInSection: React.FC<FadeInSectionProps> = ({ children, className, styl
   return (
     <div
       ref={ref}
-      className={`${className} transition-opacity duration-1000 ease-in delay-200 ${isVisible ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+      className={`${className} transition-opacity duration-1000 ease-in ${isVisible ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
 
       style={style}
     >
