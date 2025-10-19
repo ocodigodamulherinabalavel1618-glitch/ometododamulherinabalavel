@@ -1,5 +1,5 @@
 
-import React, { useRef } from 'react';
+import React from 'react';
 import { useFadeIn } from './useFadeIn';
 
 interface FadeInSectionProps {
@@ -14,7 +14,8 @@ const FadeInSection: React.FC<FadeInSectionProps> = ({ children, className, styl
   return (
     <div
       ref={ref}
-      className={`${className} transition-opacity duration-1000 ease-in ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+      className={`${className} transition-opacity duration-1000 ease-in ${isVisible ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+
       style={style}
     >
       {children}
