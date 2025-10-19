@@ -268,7 +268,7 @@ function App() {
               <span className="text-xl md:text-2xl">Aprenda a Silenciar o Caos</span>
             </h3>
             <p className="text-base md:text-lg text-white max-w-2xl mx-auto leading-relaxed">
-              Eu sei como a ansiedade te domina, rouba seu ar e controla seus dias. Mas dentro da sua mente existe um interruptor e este bônus te mostra como ligá-lo. Quando você ativa esse poder, o caos se cala, o medo some, e você finalmente está livre. Eu quero que você se cure por completa! Para isso comprando A Chave da Reprogramação Mental, você leva também:  Eu quero que você se cure por completa! Para isso comprando A Chave da Reprogramação Mental, você leva também: 
+              Eu sei como a ansiedade te domina, rouba seu ar e controla seus dias. Mas dentro da sua mente existe um interruptor e este bônus te mostra como ligá-lo. Quando você ativa esse poder, o caos se cala, o medo some, e você finalmente está livre. Eu quero que você se cure por completa! Para isso comprando A Chave da Reprogramação Mental, você leva também:
             </p>
             <div>
               <img src={bonusImage} className="w-7/12 h-auto mx-auto" />
@@ -348,7 +348,7 @@ function App() {
               Acesso ao método
             </h2>
             <p className="text-base md:text-lg lg:text-xl text-gray-400 leading-relaxed">
-              Um processo criado a partir da neurociência e da experiência real de mulheres que decidiram assumir o próprio poder. Simples na forma, profundo nos resultados. Uma escolha que muda o jeito como você se enxerga e como o mundo passa a enxergar você.
+              Um processo criado a partir da neurociência e da experiência real de mulhere uma mulher que decidiu assumir o próprio poder. Simples na forma, profundo nos resultados. Uma escolha que muda o jeito como você se enxerga e como o mundo passa a enxergar você.
             </p>
           </div>
         </FadeInSection>
