@@ -10,20 +10,7 @@ import testimonial2 from '../.bolt/2.png';
 import testimonial3 from '../.bolt/3.png';
 import julianaImage from '../.bolt/Juliana.png';
 
-const removeFloating = () => {
-  document
-    .querySelectorAll(
-      '[style*="position: fixed"][style*="bottom: 1rem"][style*="right: 1rem"][style*="z-index: 2147483647"]'
-    )
-    .forEach(el => el.remove());
-};
 
-// executa já no load
-removeFloating();
-
-// observa mudanças no DOM
-const observer = new MutationObserver(removeFloating);
-observer.observe(document.body, { childList: true, subtree: true });
 
 
 declare global {
@@ -86,20 +73,6 @@ function App() {
 
 
 
-  const handleScrollToVSL = () => {
-    const vslSection = document.getElementById('vsl-section');
-    if (vslSection) {
-      vslSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  };
-
-  const handleScrollToBonus = () => {
-    const bonusSection = document.getElementById('bonus-section');
-    if (bonusSection) {
-      bonusSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <div className="min-h-screen text-white overflow-hidden" style={{ background: 'linear-gradient(to bottom, #000000 0%, #0d0607 20%, #0a0506 50%, #0d0607 80%, #000000 100%)' }}>
       {/* Hero Section */}
@@ -123,13 +96,21 @@ function App() {
 
           {/* Subheadline */}
           <p className="text-base md:text-lg lg:text-xl text-white max-w-4xl mx-auto font-light leading-relaxed">
-           Este é o método que mais de 4.895 de mulheres usaram para transformar as suas vidas e reprogramar as suas mentes.
+           Este é o método que mais de 5.000 de mulheres usaram para transformar as suas vidas e reprogramar as suas mentes.
           </p>
 
 
 
           {/* VSL Section */}
           <div id="vsl-section" className="space-y-6 flex flex-col items-center">
+            <div className="pb-4">
+              <button
+                className="group relative px-8 md:px-10 py-4 md:py-5 text-white font-semibold text-base md:text-lg rounded-full hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-pulse-glow"
+                style={{ background: 'rgba(0, 0, 0, 0.3)', border: '1px solid rgba(212, 175, 55, 0.2)' }}
+              >
+                Assista e Comece a se Reprogramar!
+              </button>
+            </div>
             {/* YouTube Shorts Embed */}
             <div className="relative max-w-md mx-auto aspect-[9/16] rounded-2xl overflow-hidden border border-amber-600/10" style={{ background: 'rgba(0, 0, 0, 0.3)' }}>
               <div id="youtube-player" className="absolute inset-0 w-full h-full"></div>
@@ -149,24 +130,15 @@ function App() {
                           Your browser does not support the video tag.
                         </video>
                       </div>
-            <div className="pt-8">
-              <button
-                onClick={handleScrollToVSL}
-                className="group relative px-8 md:px-10 py-4 md:py-5 text-white font-semibold text-base md:text-lg rounded-full hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-pulse-glow"
-                style={{ background: 'rgba(0, 0, 0, 0.3)', border: '1px solid rgba(212, 175, 55, 0.2)' }}
-              >
-                Assista e Comece a se Reprogramar!
-              </button>
-            </div>
             
             <div className="pt-4">
               <button
-                onClick={handleScrollToBonus}
+                onClick={handleCTA}
                 className="group relative px-8 md:px-10 py-4 md:py-5 text-black font-semibold text-base md:text-lg rounded-full hover:shadow-2xl transition-all duration-300 hover:scale-105"
                 style={{ background: 'linear-gradient(135deg, #d4af37 0%, #f4e5c3 50%, #d4af37 100%)' }}
               >
                 <Crown className="inline-block w-5 h-5 mr-2 -mt-1 animate-float" />
-                Quero conhecer o método!
+                Quero sentir o poder que sempre foi meu
               </button>
             </div>
           </div>
