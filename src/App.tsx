@@ -266,7 +266,7 @@ function App() {
               <span className="text-xl md:text-2xl">Aprenda a Silenciar o Caos</span>
             </h3>
             <p className="text-base md:text-lg text-white max-w-2xl mx-auto leading-relaxed">
-              Eu sei como a ansiedade te domina, rouba seu ar e controla seus dias. Mas dentro da sua mente existe um interruptor e este bônus te mostra como ligá-lo. Quando você ativa esse poder, o caos se cala, o medo some, e você finalmente está livre.
+              Eu sei como a ansiedade te domina, rouba seu ar e controla seus dias. Mas dentro da sua mente existe um interruptor e este bônus te mostra como ligá-lo. Quando você ativa esse poder, o caos se cala, o medo some, e você finalmente está livre. Eu quero que você se cure por completa! Para isso comprando A Chave da Reprogramação Mental, você leva também: 
             </p>
             <div>
               <img src={bonusImage} alt="Bônus Exclusivo" className="w-1/2 h-auto mx-auto" />
