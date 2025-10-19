@@ -1,8 +1,8 @@
 import FadeInSection from './FadeInSection';
-import { Sparkles, Heart, Brain, Shield, Crown, CheckCircle2, Lock, ShieldCheck, User } from 'lucide-react';
+import { Brain, Crown, CheckCircle2, Lock } from 'lucide-react';
 import WhatsAppIcon from './WhatsappIcon';
-import { useState, useEffect, useRef } from 'react';
-import VideoPlayer from './VideoPlayer';
+import { useState, useEffect } from 'react';
+
 
 import bonusImage from '../.bolt/Mockup Bonus.png';
 import testimonial1 from '../.bolt/1.png';
@@ -17,12 +17,12 @@ import selo30dias from '../.bolt/selo 30 dia.png';
 declare global {
   interface Window {
     onYouTubeIframeAPIReady: () => void;
-    YT: any;
+    YT: unknown;
   }
 }
 
 function App() {
-  const playerRef = useRef(null);
+  
 
   
 
