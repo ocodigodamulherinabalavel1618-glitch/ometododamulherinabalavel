@@ -348,7 +348,7 @@ function App() {
               Acesso ao método
             </h2>
             <p className="text-base md:text-lg lg:text-xl text-gray-400 leading-relaxed">
-              Um processo criado a partir da neurociência e da experiência real de mulhere uma mulher que decidiu assumir o próprio poder. Simples na forma, profundo nos resultados. Uma escolha que muda o jeito como você se enxerga e como o mundo passa a enxergar você.
+              Um processo criado a partir da neurociência e da experiência real de uma mulher que decidiu assumir o próprio poder. Simples na forma, profundo nos resultados. Uma escolha que muda o jeito como você se enxerga e como o mundo passa a enxergar você.
             </p>
           </div>
         </FadeInSection>
