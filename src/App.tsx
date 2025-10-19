@@ -9,6 +9,7 @@ import testimonial1 from '../.bolt/1.png';
 import testimonial2 from '../.bolt/2.png';
 import testimonial3 from '../.bolt/3.png';
 import julianaImage from '../.bolt/Juliana.png';
+import selo30dias from '../.bolt/selo 30 dia.png';
 
 
 
@@ -354,9 +355,10 @@ function App() {
         <FadeInSection className="relative pt-8 sm:pt-10 md:pt-12 pb-16 sm:pb-20 md:pb-24 px-4">
           <div className="max-w-3xl mx-auto text-center space-y-6">
 
+            <img src={selo30dias} alt="Garantia de 30 dias" className="w-1/2 h-auto mx-auto" />
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-gradient-gold">
               Garantia de Confiança
-              <span className="block">30 dias</span>
+              <span className="whitespace-nowrap"> 30 dias</span>
             </h2>
             <p className="text-base md:text-lg lg:text-xl text-gray-400 leading-relaxed">
                             Assim como na neurociência, acreditamos em resultados reais, e eles começam com confiança.<br />
