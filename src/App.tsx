@@ -24,6 +24,8 @@ declare global {
 function App() {
   const playerRef = useRef(null);
 
+  
+
   const handleCTA = () => {
     window.open('https://pay.cakto.com.br/wkggpv4_591435', '_blank');
   };
