@@ -132,7 +132,7 @@ function App() {
                 <Crown className="inline-block w-5 h-5 mr-2 -mt-1 animate-float" />
                 Quero sentir o poder que sempre foi meu
               </button>
-              <p className="text-gray-400 text-xs mt-2">(clique 2x)</p>
+              <p className="text-gray-400 text-xs mt-2">(Aguarde Carregar..)</p>
             </div>
           </div>
 
@@ -166,7 +166,7 @@ function App() {
                 <Crown className="inline-block w-5 h-5 mr-2 -mt-1 animate-float" />
                 Quero sentir o poder que sempre foi meu
               </button>
-              <p className="text-gray-400 text-xs mt-2">(clique 2x)</p>
+              <p className="text-gray-400 text-xs mt-2">(Aguarde Carregar..)</p>
             </div>
           </div>
         </FadeInSection>
@@ -221,7 +221,7 @@ function App() {
                 <Crown className="inline-block w-5 h-5 mr-2 -mt-1 animate-float" />
                 Quero sentir o poder que sempre foi meu
               </button>
-              <p className="text-gray-400 text-xs mt-2">(clique 2x)</p>
+              <p className="text-gray-400 text-xs mt-2">(Aguarde Carregar..)</p>
             </div>
           </div>
         </FadeInSection>
@@ -265,20 +265,7 @@ function App() {
             <div>
               <img src={bonusImage} className="w-7/12 h-auto mx-auto" />
             </div>
-            <div className="text-center space-y-2">
-              <p className="text-lg text-gray-400">De <span className="line-through">R$19,90</span> por <span className="animate-pulse">R$00,00</span></p>
-            </div>
-            <div className="text-center pt-8">
-              <button
-                onClick={handleCTA}
-                className="group relative px-8 md:px-10 py-4 md:py-5 text-black font-semibold text-base md:text-lg rounded-full hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-pulse-glow"
-                style={{ background: 'linear-gradient(135deg, #d4af37 0%, #f4e5c3 50%, #d4af37 100%)' }}
-              >
-                <Crown className="inline-block w-5 h-5 mr-2 -mt-1 animate-float" />
-                Quero sentir o poder que sempre foi meu
-              </button>
-              <p className="text-gray-400 text-xs mt-2">(clique 2x)</p>
-            </div>
+<p className="text-gray-400 text-xs mt-2">(Aguarde Carregar..)</p>
           </div>
         </FadeInSection>
 
@@ -331,7 +318,7 @@ function App() {
               <Crown className="inline-block w-5 h-5 mr-2 -mt-1 animate-float" />
               Quero sentir o poder que sempre foi meu
             </button>
-            <p className="text-gray-400 text-xs mt-2">(clique 2x)</p>
+            <p className="text-gray-400 text-xs mt-2">(Aguarde Carregar..)</p>
           </div>
         </FadeInSection>
 
