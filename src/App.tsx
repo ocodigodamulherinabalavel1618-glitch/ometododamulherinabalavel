@@ -106,18 +106,7 @@ function App() {
 
           {/* VSL Section */}
           <div id="vsl-section" className="space-y-6 flex flex-col items-center">
-            <div className="pb-4">
-              <button
-                className="group relative px-8 md:px-10 py-4 md:py-5 text-white font-semibold text-base md:text-lg rounded-full hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-pulse-glow"
-                style={{ background: 'rgba(0, 0, 0, 0.3)', border: '1px solid rgba(212, 175, 55, 0.2)' }}
-              >
-                Assista e Comece a se Reprogramar!
-              </button>
-            </div>
-            {/* YouTube Shorts Embed */}
-            <div className="relative max-w-md mx-auto aspect-[9/16] rounded-2xl overflow-hidden border border-amber-600/10" style={{ background: 'rgba(0, 0, 0, 0.3)' }}>
-              <div id="youtube-player" className="absolute inset-0 w-full h-full"></div>
-            </div>
+            
 
                       <div style={{
                         borderRadius: '1rem',
