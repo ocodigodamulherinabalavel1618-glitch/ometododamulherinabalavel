@@ -94,7 +94,7 @@ function App() {
         <div className="relative max-w-5xl mx-auto text-center space-y-8">
           {/* Headline */}
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif font-bold leading-tight text-gray-100">
-            Você Vai Matar a Parte de Você Que Te Sabota ou Vai Deixar Ela <span className="text-gradient-gold">Matar Seus Sonhos </span> de Novo?”
+            Ou você <span className="text-gradient-gold">Reprograma Sua Mente </span> ou continua se destruindo por dentro, em silêncio.”
           </h1>
 
           {/* Subheadline */}
