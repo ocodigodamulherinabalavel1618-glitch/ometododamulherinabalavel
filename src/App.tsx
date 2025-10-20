@@ -99,7 +99,7 @@ function App() {
 
           {/* Subheadline */}
           <p className="text-base md:text-lg lg:text-xl text-white max-w-4xl mx-auto font-light leading-relaxed">
-           Este é o método que mais de 5.000 de mulheres usaram para transformar as suas vidas e reprogramar as suas mentes.
+           Este é o método que mais de CINCO MIL mulheres usaram para transformar as suas vidas e reprogramar as suas mentes.
           </p>
 
 
