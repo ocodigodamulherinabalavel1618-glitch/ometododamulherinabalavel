@@ -117,7 +117,7 @@ function App() {
                         margin: '0 auto',
                         maxWidth: '260px'
                       }}>
-                        <video controls autoPlay loop muted style={{ width: '100%', display: 'block', borderRadius: '0.75rem' }}>
+                        <video controls autoPlay loop muted style={{ width: '100%', display: 'block', borderRadius: '0.75rem' }} loading="lazy">
                           <source src="https://uzvnylkkjdopbbbrqzee.supabase.co/storage/v1/object/public/Reprograme%20seu%20Cerebro/YTDown.com_Shorts_Media_zG09GhyL5Eg_001_1080p%20(1).mp4" type="video/mp4" />
                         
                         </video>
@@ -172,7 +172,7 @@ function App() {
         {/* New Section: De mulher pra mulher */}
         <FadeInSection className="relative py-16 sm:py-20 md:py-24 px-4 mt-16">
           <div className="absolute inset-0 opacity-30" style={{ transform: `translateY(${parallaxOffset * 0.1 - 200}px)` }}>
-            <img src={julianaImage} alt="Juliana" className="w-full h-full object-cover" />
+            <img src={julianaImage} alt="Juliana" className="w-full h-full object-cover" loading="lazy" />
           </div>
           <div className="relative max-w-4xl mx-auto text-center space-y-8">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-white">
@@ -235,13 +235,13 @@ function App() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="rounded-lg flex justify-center">
-                <img src={testimonial1} alt="Depoimento 1" className="rounded-lg" />
+                <img src={testimonial1} alt="Depoimento 1" className="rounded-lg" loading="lazy" />
               </div>
               <div className="rounded-lg flex justify-center">
-                <img src={testimonial2} alt="Depoimento 2" className="rounded-lg" />
+                <img src={testimonial2} alt="Depoimento 2" className="rounded-lg" loading="lazy" />
               </div>
               <div className="rounded-lg flex justify-center">
-                <img src={testimonial3} alt="Depoimento 3" className="rounded-lg" />
+                <img src={testimonial3} alt="Depoimento 3" className="rounded-lg" loading="lazy" />
               </div>
             </div>
           </div>
@@ -261,7 +261,7 @@ function App() {
               Eu sei como a ansiedade te domina, rouba seu ar e controla seus dias. Mas dentro da sua mente existe um interruptor e este bônus te mostra como ligá-lo. Quando você ativa esse poder, o caos se cala, o medo some, e você finalmente está livre. Eu quero que você se cure por completa! Para isso comprando A Chave da Reprogramação Mental, você leva também:
             </p>
             <div>
-              <img src={bonusImage} className="w-7/12 h-auto mx-auto" />
+              <img src={bonusImage} className="w-7/12 h-auto mx-auto" loading="lazy" />
             </div>
               <button
                 onClick={handleCTA}
@@ -344,7 +344,7 @@ function App() {
         <FadeInSection className="relative pt-8 sm:pt-10 md:pt-12 pb-16 sm:pb-20 md:pb-24 px-4">
           <div className="max-w-3xl mx-auto text-center space-y-6">
 
-            <img src={selo30dias} alt="Garantia de 30 dias" className="w-1/2 h-auto mx-auto" />
+            <img src={selo30dias} alt="Garantia de 30 dias" className="w-1/2 h-auto mx-auto" loading="lazy" />
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-gradient-gold">
               Garantia de Confiança
               <span className="whitespace-nowrap"> 30 dias</span>
